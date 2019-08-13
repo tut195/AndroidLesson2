@@ -1,4 +1,4 @@
-package com.babenkovladimir.androidlesson2;
+package com.babenkovladimir.androidapplication2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,8 @@ public class SecondActivity extends AppCompatActivity {
     if(intent.hasExtra("message")){
       String message = intent.getStringExtra("message");
 
-      Bundle bundle = intent.getBundleExtra("bundle");
+//      Bundle bundle = intent.getBundleExtra("bundle");
+//      bundle.getString("message", "deafult message");
 
       Log.d("SKILLUP", "message from first activity - " + message);
     }

@@ -1,24 +1,30 @@
-package com.babenkovladimir.androidlesson2;
+package com.babenkovladimir.androidapplication2;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class ActivityForResult extends AppCompatActivity {
+
+  @BindView(R.id.btCloseActivtyWithResult)
+  Button mButton;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_for_result);
+    ButterKnife.bind(this);
 
-    Button button = findViewById(R.id.btCloseActivtyWithResult);
+    //mButton = findViewById(R.id.btCloseActivtyWithResult);
     EditText editText = findViewById(R.id.editText);
 
-    button.setOnClickListener(new OnClickListener() {
+    mButton.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View view) {
         String message = editText.getText().toString();
@@ -28,7 +34,7 @@ public class ActivityForResult extends AppCompatActivity {
 
         setResult(RESULT_OK, data);
         finish();
-       // setResult(RESULT_CANCELED);
+        // setResult(RESULT_CANCELED);
       }
     });
 

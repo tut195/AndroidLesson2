@@ -1,4 +1,4 @@
-package com.babenkovladimir.androidlesson2;
+package com.babenkovladimir.androidapplication2;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
