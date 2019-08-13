@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello World!"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <EditText
+    android:id="@+id/etFirstName"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteY="10dp"/>
+
+  <Button
+    android:id="@+id/btShowDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="148dp"
+    android:text="Show dialog"
+    app:layout_constraintBottom_toTopOf="@+id/textView"
+    app:layout_constraintStart_toStartOf="@+id/textView"/>
+
+  <Button
+    android:id="@+id/btShowDialog1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="72dp"
+    android:text="Show dialog"
+    app:layout_constraintBottom_toTopOf="@+id/textView"
+    app:layout_constraintStart_toStartOf="@+id/textView"/>
+
+  <Button
+    android:id="@+id/btShowDialog2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="216dp"
+    android:layout_marginStart="84dp"
+    android:text="Show dialog"
+    app:layout_constraintBottom_toTopOf="@+id/textView"
+    app:layout_constraintStart_toStartOf="@+id/textView"/>
+
+  <Button
+    android:id="@+id/btShowDialog3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="76dp"
+    android:layout_marginStart="16dp"
+    android:text="Show dialog"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etFirstName"/>
+
+  <TextView
+    android:id="@+id/tvResultr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="168dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="8dp"
+    android:hint="Result from other activity"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <!--android:onClick="onShowDialogBtClick"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
